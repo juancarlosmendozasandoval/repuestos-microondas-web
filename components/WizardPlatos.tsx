@@ -13,7 +13,7 @@ export default function WizardPlatos() {
     profundidad: "",
   });
 
-  const numeroWhatsApp = "593963186384"; 
+  const numeroWhatsApp = "593994516888"; 
 
   const irSiguientePaso = () => setStep(step + 1);
 

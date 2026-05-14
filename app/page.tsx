@@ -14,7 +14,7 @@ export default function Home() {
     { id: "ter", nombre: "Termofusibles", img: "/cat-termofusibles.jpg" },
   ];
 
-  const numeroWhatsApp = "593963186384"; // Reemplaza con tu número
+  const numeroWhatsApp = "593994516888"; // Reemplaza con tu número
 
   return (
     <main className="min-h-screen bg-gray-50 pb-20">
