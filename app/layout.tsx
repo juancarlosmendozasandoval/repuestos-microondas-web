@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "./globals.css"; // <- ¡Esta es la línea clave que devuelve el diseño!
 
 export const metadata: Metadata = {
   title: "Platos para Microondas y Repuestos Exactos | Servicio Técnico",
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
     siteName: "Repuestos Microondas",
     images: [
       {
-        url: "https://repuestosmicroondas.com/plato-roto.png", // La imagen que se compartirá en WhatsApp/Facebook
+        url: "https://repuestosmicroondas.com/plato-roto.png", 
         width: 800,
         height: 600,
       },
