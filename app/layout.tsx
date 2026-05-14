@@ -1,5 +1,6 @@
+import { Analytics } from "@vercel/analytics/react"; // <- Importamos Analytics
 import type { Metadata } from "next";
-import "./globals.css"; // <- ¡Esta es la línea clave que devuelve el diseño!
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Platos para Microondas y Repuestos Exactos | Servicio Técnico",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     siteName: "Repuestos Microondas",
     images: [
       {
-        url: "https://repuestosmicroondas.com/plato-roto.png", 
+        url: "https://repuestosmicroondas.com/plato-roto.png",
         width: 800,
         height: 600,
       },
@@ -29,7 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics /> {/* <- Colocamos el componente aquí abajo de children */}
+      </body>
     </html>
   );
 }
